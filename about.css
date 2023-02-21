@@ -1,0 +1,46 @@
+#story{
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.about{
+    margin-top: 50px;
+    display:grid;
+    grid-template-columns: 45% 45%;
+    row-gap: 50px;
+    grid-column-gap: 20px;
+}
+
+.about img{
+    width:100%;  
+}
+
+.about p{
+    line-height: 1.5;
+    width:90%;
+    
+}
+
+#circle1{
+    height: 200px;
+    width: 200px;
+    margin-left:-50px;
+}
+
+#circle2{
+    height: 200px;
+    width: 200px;
+    margin-top:10px;
+    margin-left:225px;
+}
+
+@media screen and (max-width:500px){
+    .about{
+        display:block;
+    }
+    #camp{
+        box-shadow: none;
+    }
+}

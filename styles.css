@@ -1,0 +1,136 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+}
+
+.container{
+    width:90%;
+}
+
+/* HEADER */
+header h1{
+    color:rgb(0, 0, 0);
+}
+
+header{
+    float:left;
+}
+
+span{
+    font-weight: 800;
+    color:rgb(255, 133, 63);
+}
+
+/* NAVIGATION */
+nav{
+    margin-top:28px;
+    float:right;
+}
+
+nav a{
+    padding-left: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+nav p{
+    width:50%;
+    float:left;
+}
+
+nav a:hover{
+    color:rgb(255, 147, 84);
+}
+
+#hide{
+    border-radius: 30px;
+    border-style: none;
+    float:right;
+    background-color: transparent;
+}
+
+button img{
+    width:25px;
+    height:25px;
+    transition: 0.3s;
+}
+
+button img:hover{
+    width:30px;
+    height:25px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+hr{
+    border: 1px solid rgb(255, 147, 84);
+    width:100%;
+    margin-bottom:20px;
+    margin-top:50px;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 90%;
+    height: 80px;     
+    color:black;
+    
+}
+
+footer img{
+    width:40px;
+    margin-right:10px;
+}
+
+footer p{
+    margin-top:50px;
+}
+
+.follow{
+    float:right;
+    margin-top:-80px;
+}
+
+/* CIRCLE DECORATIONS */
+.circle {
+    position: absolute;
+    background-color: rgb(255, 147, 84);
+    border-radius: 50%;
+    display: inline-block;
+    z-index: -1;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:700px){
+    nav {
+        right:0;
+        position: absolute;
+        background-color: white;
+        z-index: 1;
+        width:150px;
+    }
+
+    nav a{
+        display: block;
+    }
+
+    .container{
+        width:100%;
+    }
+}
+
+@media screen and (min-width:700px){
+    #hide{
+        display:none;
+    }
+}

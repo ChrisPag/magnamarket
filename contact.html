@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PageSpace</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/contact.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+</head>
+<body onresize="resized()">
+    <div class="container">
+        <header>
+            <h1>Page<span>Space</span></h1>
+        </header>
+        <button id="hide" onclick="hide()"><img src="img/icons/menu-icon.png"></button>
+        <nav>
+            <div id="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="shop.html">Shop</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <div class="contact">
+            <form class="form">
+                <span class="circle"></span>
+                <p>Contact Us</p>
+                <input type="text" id="username" name="username" placeholder="Full Name"><br>
+                <input type="text" id="email" name="email" placeholder="Email"><br>
+                <textarea name="message" rows="10" cols="30" placeholder="Message"></textarea><br> 
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <footer>
+            <hr>
+            <p>&copy; Christina Bose Paguirigan 2023</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <img src="img/icons/twitter-icon.png" />
+                <img src="img/icons/ig-icon.png" />
+                <img src="img/icons/linkedin-icon.png" />
+            </div>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PageSpace</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/home.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:wght@100;800&display=swap"">
+</head>
+<body onresize="resized()">
+    <div class="container">
+        <header>
+            <h1>Page<span>Space</span></h1>
+        </header>
+        <button id="hide" onclick="hide()"><img src="img/icons/menu-icon.png"></button>
+        <nav>
+            <div id="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="shop.html">Shop</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="img/campfire.jpg" style="width:100%">
+                    <div class="text">Caption Text</div>
+                    </div>
+        
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="img/campfire.jpg" style="width:100%">
+                    <div class="text">Caption Two</div>
+                    </div>
+            </div>
+            
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="img-container">
+                <img alt="night sailing" src="img/space-boat2.jpg" />
+                <p id="img-title">Discover a new world<br> through books</p>
+                <button><a href="shop.html">Shop Now</a></button>
+            </div>
+
+            <div class="grid">
+                <div class="box">
+                    <img src="img/icons/shipping-icon.png" />
+                    <h3>Free Shipping over $50</h3>
+                    <p>Spend over $50 and get awarded with free shipping!</p>
+                </div>
+                <div class="box">
+                    <img src="img/icons/return-icon.png" />
+                    <h3>Return Policy</h3>
+                    <p>Free returns for up to 30 days</p>
+                </div>
+                <div class="box">
+                    <img src="img/icons/friend-icon.png" />
+                    <h3>Buy 1 Get 1 Free</h3>
+                    <p>BOGO sale ends this week! Don't miss it</p>
+                </div>
+            </div>
+
+            <div class="home-content">
+                <img alt="book in hands" src="img/holding-book1.jpg" />
+                <div class="bestsellers">
+                    <h2>Enjoy our Bestsellers</h2>
+                    <span class="circle"></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
+                        est laborum</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <hr>
+            <p>&copy; Christina Bose Paguirigan 2023</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <img src="img/icons/twitter-icon.png" />
+                <img src="img/icons/ig-icon.png" />
+                <img src="img/icons/linkedin-icon.png" />
+            </div>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

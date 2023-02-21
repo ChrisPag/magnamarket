@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PageSpace</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/about.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+</head>
+<body onresize="resized()">
+    <div class="container">
+        <header>
+            <h1>Page<span>Space</span></h1>
+        </header>
+        <button id="hide" onclick="hide()"><img src="img/icons/menu-icon.png"></button>
+        <nav>
+            <div id="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="shop.html">Shop</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        
+        <p id="story">Our Story</p>
+        <div class="about">
+            <div class="grid-item">
+                <img id="tent" src="img/tent-book.jpg">
+            </div>     
+            <div class="grid-item">
+                <span class="circle" id="circle1"></span>
+                <h2>It all started with a dream.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
+                    est laborum
+                </p>
+            </div>
+            <div class="grid-item">
+                <span class="circle" id="circle2"></span>
+                <h2>Dreams come to life on pages.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
+                    est laborum
+                </p>
+            </div>
+            <div id="border-img" class="grid-item grid1">
+                <img id="camp" src="img/campfire.jpg">
+            </div>     
+              
+        </div>
+        <footer>
+            <hr>
+            <p>&copy; Christina Bose Paguirigan 2023</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <img src="img/icons/twitter-icon.png" />
+                <img src="img/icons/ig-icon.png" />
+                <img src="img/icons/linkedin-icon.png" />
+            </div>
+        </footer>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

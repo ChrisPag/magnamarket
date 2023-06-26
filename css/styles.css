@@ -12,6 +12,9 @@ body{
     
 }
 
+a{
+    text-decoration: none;
+}
 
 /* HEADER */
 header h1{
@@ -95,10 +98,35 @@ hr{
 footer{
     /*position: relative;*/
     bottom: 0;
-    width: 90%;
-    height: 80px;     
+    width: 100%;
+    height: 350px;     
     color:black;
     margin: auto;
+    background-color: #CCC5B9;
+   
+}
+
+footer a{
+    color:black;
+}
+
+footer p{
+    margin-top:-10px;
+}
+
+.footer-container{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:50px;
+}
+
+.footer-links{
+    
+    width:100%;
+    display:grid;
+    grid-template-columns: 50% 20% 20%;
+    grid-gap:5%;
 }
 
 footer img{
@@ -106,13 +134,20 @@ footer img{
     margin-right:10px;
 }
 
-footer p{
-    margin-top:50px;
+
+footer hr{
+    border: 1px solid black;
+    
 }
 
 .follow{
-    float:right;
-    margin-top:-80px;
+    display:grid;
+    grid-template-columns: 45% 45%;
+    grid-gap:10%;
+}
+
+.icons{
+    justify-self: end;
 }
 
 /* CIRCLE DECORATIONS */

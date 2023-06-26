@@ -5,40 +5,48 @@
 body{
     display: flex;
     justify-content: center;
-    position: relative;
+    /*position: relative;*/
     min-height: 100vh;
+    width:100vw;
+    margin: 0; padding: 0;
+    
 }
 
-.container{
-    width:90%;
-}
 
 /* HEADER */
 header h1{
     color:rgb(0, 0, 0);
+    font-family: Georgia, Times, Times New Roman, serif;
 }
 
 header{
     float:left;
+    
 }
 
 span{
     font-weight: 800;
-    color:rgb(255, 133, 63);
+    color:#EB5E28;
+    font-family: Georgia, Times, Times New Roman, serif;
 }
 
 /* NAVIGATION */
 nav{
     margin-top:28px;
     float:right;
+    padding:1rem;
+    position: relative;
+    z-index:10;
+    
 }
 
 nav a{
     padding-left: 10px;
-    font-size: 24px;
+    font-size: 18px;
     text-decoration: none;
     color:rgb(0, 0, 0);
     transition: 0.3s;
+    
 }
 
 nav p{
@@ -55,6 +63,9 @@ nav a:hover{
     border-style: none;
     float:right;
     background-color: transparent;
+    position: relative;
+    top:10px;
+    z-index: 10;
 }
 
 button img{
@@ -69,6 +80,10 @@ button img:hover{
     cursor: pointer;
 }
 
+h2{
+    font-family: Georgia, Times, Times New Roman, serif;
+}
+
 /* FOOTER */
 hr{
     border: 1px solid rgb(255, 147, 84);
@@ -78,12 +93,12 @@ hr{
 }
 
 footer{
-    position: relative;
+    /*position: relative;*/
     bottom: 0;
     width: 90%;
     height: 80px;     
     color:black;
-    
+    margin: auto;
 }
 
 footer img{
@@ -103,7 +118,7 @@ footer p{
 /* CIRCLE DECORATIONS */
 .circle {
     position: absolute;
-    background-color: rgb(255, 147, 84);
+    background-color: #EB5E28;
     border-radius: 50%;
     display: inline-block;
     z-index: -1;
@@ -127,10 +142,120 @@ footer p{
     .container{
         width:100%;
     }
+
+    
 }
 
 @media screen and (min-width:700px){
     #hide{
         display:none;
     }
+    
+}
+
+/********test*******8*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 40%;
+  
+  left:15%;
+  
+}
+
+.main-text{
+    font-size: 60px;
+    margin-bottom:10px;
+    font-weight: 800;
+    font-family: Georgia, Times, Times New Roman, serif;
+}
+
+.sub-text{
+font-size:20px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dots{
+    position: absolute;
+    bottom:5%;
+    left:50%;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #EB5E28;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }

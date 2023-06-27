@@ -19,14 +19,13 @@
         <nav>
             <div id="links">
                 <a href="index.html">Home</a>
-                <a href="about.html">About</a>
                 <a href="shop.html">Shop</a>
                 <a href="blog.html">Blog</a>
                 <a href="contact.html">Contact</a>
             </div>
         </nav>
         <div class="shop-container">
-            <div class="filters">
+            <aside class="filters">
                 <h2>Filters</h2>
                 <input type="checkbox" id="graphic">
                 <label for="graphic" name="graphic">Graphic Novel</label><br>
@@ -35,10 +34,10 @@
                 <input type="checkbox" id="fiction">
                 <label for="fiction" name="fiction">Fiction</label><br>
                 <button>Apply Filters</button>
-            </div>
-            <div class="products">
-                <span class="circle"></span>
-                <p id="shop">Shop</p>
+            </aside>
+            <section class="products">
+                <!-- <span class="circle"></span> -->
+                <h1 id="shop">Shop</h1>
                 <div class="item-grid">
                     <div class="item">
                         <img alt="seconds" src="img/seconds-cropped.jpg" />
@@ -66,20 +65,48 @@
                     </div>
 
                 </div>
+            </section>
+            
+        </div>
+        
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <div>
+                    <h4>About Us</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                        commodo consequat.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <p><a href="contact.html">Contact</a></p>
+                    <p><a href="shop.html">Shop</a></p>
+                    <p><a href="blog.html">Blog</a></p>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <p><a href="index.html">Terms and Conditions</a></p>
+                    <p><a href="index.html">Privacy Policy</a></p>
+                    <p><a href="index.html">Acknowledgements</a></p>
+                </div>
+                
+            </div>
+            <hr>
+            
+            <div class="follow">
+                <p>&copy; Christina Bose Paguirigan 2023</p>
+                
+                <div class="icons">
+                    <img src="img/icons/twitter-icon.png" />
+                    <img src="img/icons/ig-icon.png" />
+                    <img src="img/icons/linkedin-icon.png" />
+                </div>
             </div>
         </div>
-        <footer>
-            <hr>
-            <p>&copy; Christina Bose Paguirigan 2023</p>
-            <div class="follow">
-                <h4>Follow Us</h4>
-                <img src="img/icons/twitter-icon.png" />
-                <img src="img/icons/ig-icon.png" />
-                <img src="img/icons/linkedin-icon.png" />
-            </div>
-        </footer>
-    </div>
-    
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>

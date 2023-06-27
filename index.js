@@ -2,20 +2,20 @@ let menu = document.getElementById("links");
 let button = document.getElementById("hide");
 
 function hide(){
-    if (menu.style.display === "none") {
-        menu.style.display = "block";
-    } 
+  if (menu.style.display === "none") {
+    menu.style.display = "block";
+  } 
 
-    else {
-        menu.style.display = "none";
-        button.style.right = "0";
-    }
+  else {
+    menu.style.display = "none";
+    button.style.right = "0";
+  }
 }
 
 function resized(){
-    if(window.innerWidth > 700){
-        menu.style.display = "inline";
-    }
+  if(window.innerWidth > 700){
+    menu.style.display = "inline";
+  }
 }
 
 //test

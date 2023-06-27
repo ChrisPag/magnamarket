@@ -14,6 +14,7 @@
 form{
     width:40%;
     display: inline-block;
+    margin-bottom:50px;
 }
 
 form p{
@@ -45,16 +46,16 @@ input[type="submit"]{
     border-radius: 20px;
     padding:10px;
     width:150px;
-    background-color: rgb(255, 147, 84);
+    background-color: #EB5E28;
     font-size: 16px;
     border: none;
     float:right;
     transition: 0.3s;
+    color:white;
 }
 
 input[type="submit"]:hover{
     background-color: black;
-    color:white;
     cursor: pointer;
 }
 

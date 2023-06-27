@@ -1,5 +1,7 @@
 *{
     font-family: "Poppins", sans-serif;
+    box-sizing:border-box;
+    color:#403D39;
 }
 
 body{
@@ -9,22 +11,36 @@ body{
     min-height: 100vh;
     width:100vw;
     margin: 0; padding: 0;
-    
+    flex-direction: column;
 }
 
 a{
     text-decoration: none;
+    transition: 0.3s;
+}
+
+h1, h2, h3{
+    font-family: Georgia, Times, Times New Roman, serif;
+    color:black;
+}
+
+h4{
+    color:black;
+    text-transform: uppercase;
+}
+
+button{
+    transition: 0.3s;
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 /* HEADER */
-header h1{
-    color:rgb(0, 0, 0);
-    font-family: Georgia, Times, Times New Roman, serif;
-}
 
 header{
     float:left;
-    
 }
 
 span{
@@ -35,7 +51,7 @@ span{
 
 /* NAVIGATION */
 nav{
-    margin-top:28px;
+    margin-top:15px;
     float:right;
     padding:1rem;
     position: relative;
@@ -48,7 +64,6 @@ nav a{
     font-size: 18px;
     text-decoration: none;
     color:rgb(0, 0, 0);
-    transition: 0.3s;
     
 }
 
@@ -83,10 +98,6 @@ button img:hover{
     cursor: pointer;
 }
 
-h2{
-    font-family: Georgia, Times, Times New Roman, serif;
-}
-
 /* FOOTER */
 hr{
     border: 1px solid rgb(255, 147, 84);
@@ -99,11 +110,11 @@ footer{
     /*position: relative;*/
     bottom: 0;
     width: 100%;
-    height: 350px;     
+    height: 30%;     
     color:black;
     margin: auto;
     background-color: #CCC5B9;
-   
+    font-weight:100
 }
 
 footer a{
@@ -112,6 +123,7 @@ footer a{
 
 footer p{
     margin-top:-10px;
+    color:black;
 }
 
 .footer-container{
@@ -186,111 +198,4 @@ footer hr{
         display:none;
     }
     
-}
-
-/********test*******8*/
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-  
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 40%;
-  
-  left:15%;
-  
-}
-
-.main-text{
-    font-size: 60px;
-    margin-bottom:10px;
-    font-weight: 800;
-    font-family: Georgia, Times, Times New Roman, serif;
-}
-
-.sub-text{
-font-size:20px;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dots{
-    position: absolute;
-    bottom:5%;
-    left:50%;
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #EB5E28;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
 }

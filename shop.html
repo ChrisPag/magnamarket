@@ -12,7 +12,7 @@
 <body onresize="resized()">
     <div class="container">
         <header>
-            <h1>Page<span>Space</span></h1>
+            <img class="logo" src="img/logo.png" alt="magna market logo" >
         </header>
         
         <button id="hide" onclick="hide()"><img src="img/icons/menu-icon.png"></button>
@@ -26,14 +26,44 @@
         </nav>
         <div class="shop-container">
             <aside class="filters">
-                <h2>Filters</h2>
-                <input type="checkbox" id="graphic">
-                <label for="graphic" name="graphic">Graphic Novel</label><br>
-                <input type="checkbox" id="nonfiction">
-                <label for="nonfiction" name="nonfiction">Non-fiction</label><br>
-                <input type="checkbox" id="fiction">
-                <label for="fiction" name="fiction">Fiction</label><br>
-                <button>Apply Filters</button>
+                <h2>Categories</h2>
+                <div class="accordion">
+                    <div>
+                      <input type="checkbox" id="women" class="accordion__input">
+                      <label for="women" class="accordion__label">Women's Clothing</label>
+                      <div class="accordion__content">
+                        <p>Tops</p>
+                        <p>Bottoms</p>
+                        <p>Accessories</p>
+                        <p>Dresses</p>
+                      </div>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="men" class="accordion__input">
+                      <label for="men" class="accordion__label">Men's Clothing</label>
+                      <div class="accordion__content">
+                        <p>Tops</p>
+                        <p>Bottoms</p>
+                        <p>Accessories</p>
+                      </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="books" class="accordion__input">
+                        <label for="books" class="accordion__label">Books</label>
+                        <div class="accordion__content">
+                          <p>Fiction</p>
+                          <p>Non-fiction</p>
+                        </div>
+                      </div>
+                    <div>
+                        <input type="checkbox" id="electronics" class="accordion__input">
+                        <label for="electronics" class="accordion__label">Electronics</label>
+                        <div class="accordion__content">
+                          <p>Record Players</p>
+                        </div>
+                      </div>
+                  </div>
+
             </aside>
             <section class="products">
                 <!-- <span class="circle"></span> -->
@@ -65,8 +95,7 @@
                     </div>
 
                 </div>
-            </section>
-            
+            </section>    
         </div>
         
     </div>

@@ -1,9 +1,22 @@
+h4{
+    font-family: "Poppins", sans-serif;
+}
+
+.tag{
+    color: #EB5E28;
+    margin-left:10px;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
 .blog{
     display:grid;
+    width:80%;
     grid-template-columns: 30% 30% 30%;
     margin-top:50px;
-    grid-column-gap: 3%;
+    grid-gap:20px;
     justify-content: center;
+    margin:auto;
 }
 
 .blog-item{
@@ -27,7 +40,8 @@
     margin-top:150px;
     font-size: 32px;
     font-weight: 800;
-    margin-left:3%;
+    
+    text-align: center;
 }
 
 #circle{

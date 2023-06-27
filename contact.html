@@ -12,7 +12,7 @@
 <body onresize="resized()">
     <div class="container">
         <header>
-            <h1>Page<span>Space</span></h1>
+            <img class="logo" src="img/logo.png" alt="magna market logo" >
         </header>
         <button id="hide" onclick="hide()"><img src="img/icons/menu-icon.png"></button>
         <nav>
@@ -25,14 +25,28 @@
         </nav>
 
         <div class="contact">
-            <form class="form">
-                <span class="circle"></span>
-                <h1>Contact Us</h1>
-                <input type="text" id="username" name="username" placeholder="Full Name"><br>
-                <input type="text" id="email" name="email" placeholder="Email"><br>
-                <textarea name="message" rows="10" cols="30" placeholder="Message"></textarea><br> 
-                <input type="submit" value="Submit">
-            </form>
+            
+            <div class="contact-grid">
+                <div class="details">
+                    <h1>Contact Us</h1>
+                    <p>Need to get in touch? Submit a form or
+                        contact us through our email or phone below.
+                    </p>
+                    <p><span>Email</span> support@magnamarket.com</p>
+                    <p><span>Phone</span> +1 (888) 123 1234</p>
+                    <p><span>Address</span> 123 Magna St, Toronto, Ontario</p>
+                </div>
+                <form class="form">
+                    <!-- <span class="circle"></span> -->
+                    
+                    <input type="text" id="username" name="username" placeholder="Full Name"><br>
+                    <input type="text" id="email" name="email" placeholder="Email"><br>
+                    <textarea name="message" rows="10" cols="30" placeholder="Message"></textarea><br> 
+                    <input type="submit" value="Submit">
+                </form>
+                
+            </div>
+            
         </div>
 
         <footer>

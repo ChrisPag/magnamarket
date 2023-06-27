@@ -1,7 +1,5 @@
 /* HOME PAGE */
-header{
-    margin-top:15px;
-}
+
 
 header h1{
     float:left;
@@ -18,7 +16,7 @@ header h1{
     background-color: #EB5E28;
     border:none;
     border-radius: 50px;
-    font-size: 18px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: 100;
 }
@@ -51,7 +49,7 @@ header h1{
     grid-template-columns: 35% 55%;
     align-items: center;
     grid-gap:10%;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .home-content img{
@@ -60,10 +58,14 @@ header h1{
     box-shadow: 60px -60px #EB5E28;
     margin-top:100px;
 }
+.box-container span{
+    float:right;
+}
 
-.categories{
-    text-align: center;
+
+.category-heading{
     margin-bottom:-20px;
+    color:#403D39;
 }
 
 .inner{
@@ -100,7 +102,14 @@ header h1{
 
 .overlay h3{
     color:white;
-    font-size: 24px;
+    font-size: 26px;
+}
+
+.box-container{
+    width:50%;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid{
@@ -108,15 +117,11 @@ header h1{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-gap:15px;
-    width:50%;
-    margin:auto;
-    justify-content: center;
-    align-items: center;
 }
 
 .box{
-    margin-top: 40px;
     margin-bottom: 40px;
+    margin-top:20px;
     text-align: center;
     background-color: #DFDFDF;
     border-radius: 10px;
@@ -125,6 +130,7 @@ header h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 14px;
 }
 
 .box img{
@@ -180,7 +186,7 @@ header h1{
     position: absolute;
     bottom: 35%;
     left:15%;
-    width:50%;
+    width:45%;
   }
 
   .text h1, .text p{
@@ -188,7 +194,7 @@ header h1{
   }
   
   .main-text{
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom:10px;
       
     font-weight: 400;
@@ -196,7 +202,7 @@ header h1{
   }
   
   .sub-text{
-  font-size:24px;
+  font-size:18px;
   }
   
   /* Number text (1/3 etc) */
@@ -210,9 +216,13 @@ header h1{
   
   /* The dots/bullets/indicators */
   .dots{
-      position: absolute;
-      bottom:5%;
-      left:50%;
+    position: absolute;
+    bottom:5%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width:100px;
   }
   
   .dot {
@@ -245,6 +255,7 @@ header h1{
     .box img{
         height:35px;
     }
+    
 }
 
 @media screen and (min-width:1200px){
@@ -256,6 +267,9 @@ header h1{
     button{
         top: 320px;
     }
+
+    
+
 }
 
 @media screen and (min-width:900px) and (max-width:1200px){
@@ -266,9 +280,8 @@ header h1{
     button{
         top: 260px;
     }
-    .grid{
-        width:75%;
-    }
+
+    
 
     .main-text{
         
@@ -278,6 +291,10 @@ header h1{
         width:80%;
     }
     .sub-text{
+        font-size: 20px;
+    }
+
+    .overlay h3{
         font-size: 20px;
     }
 }
@@ -290,11 +307,12 @@ header h1{
     .text button{
         font-size: 14px;
     }
-    .grid{
-        width:75%;
-    }
     .main-text{
         font-size: 24px;
+    }
+
+    .box-container{
+        width:80%;
     }
 
     .home-content{
@@ -302,6 +320,13 @@ header h1{
     }
     .sub-text{
         font-size: 16px;
+    }
+
+    .overlay{
+        width:50%;
+    }
+    .overlay h3{
+        font-size: 18px;
     }
 }
 
@@ -327,11 +352,16 @@ header h1{
         margin-left:-50px;
     }
 
+    .box-container{
+        width:80%;
+    }
+
     .grid{
         /* display: block; */
-        grid-template-columns: 45% 45%;
-        width:75%;
+        grid-template-columns: 50% 50%;
+        gap:30px;
         margin-bottom:50px;
+        margin:0 auto;
     }
 
     .box{

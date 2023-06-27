@@ -2,7 +2,24 @@
     width:100%;
     height:80%;
     margin-top:100px;
-    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-grid{
+    width:75%;
+    display:grid;
+    grid-template-columns: 55% 40%;
+    gap:5%;
+    
+    align-items: center;
+}
+
+.details{
+    margin-top:-100px;
 }
 
 .circle {
@@ -11,10 +28,17 @@
     margin-left:-200px;
 }
 
+span{
+    font-weight: bold;
+    margin-right:20px;
+}
+
 form{
-    width:40%;
+    /* width:40%; */
     display: inline-block;
     margin-bottom:50px;
+    padding:20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 form p{
@@ -22,24 +46,30 @@ form p{
     font-size: 36px;
 }
 
-form input[type=text]{
+form input[type=text], textarea{
     width: 100%;
-    border: 2px solid rgb(40, 0, 71);
+    /* border: 2px solid rgb(40, 0, 71); */
+    border:none;
     padding:10px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-top:10px;
     margin-bottom:10px;
+    background-color: #DFDFDF;
 }
 
-form textarea{
+/* form textarea{
     border: 2px solid rgb(40, 0, 71);
     width: 100%;
     padding:10px;
     margin-top:10px;
     margin-bottom:10px;
-}
+
+} */
 
 form input::placeholder{
     font-size: 16px;
+    color:black;
 }
 
 input[type="submit"]{
@@ -49,7 +79,7 @@ input[type="submit"]{
     background-color: #EB5E28;
     font-size: 16px;
     border: none;
-    float:right;
+    float:left;
     transition: 0.3s;
     color:white;
 }

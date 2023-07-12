@@ -1,5 +1,5 @@
 *{
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     box-sizing:border-box;
     color:#403D39;
 }
@@ -63,7 +63,7 @@ nav a{
     font-size: 18px;
     text-decoration: none;
     color:rgb(0, 0, 0);
-    
+    font-weight: lighter;
 }
 
 nav p{
@@ -126,11 +126,16 @@ footer p{
     color:black;
 }
 
+.footer h4{
+    font-weight: bold;
+}
+
 .footer-container{
     width:90%;
     margin-left: auto;
     margin-right: auto;
     margin-top:50px;
+    line-height: 1.5;
 }
 
 .footer-links{
@@ -156,10 +161,21 @@ footer hr{
     display:grid;
     grid-template-columns: 45% 45%;
     grid-gap:10%;
+    margin-top:40px;
 }
 
 .icons{
     justify-self: end;
+    
+}
+
+.icons img{
+    width:25px;
+    margin-top:-15px;
+}
+
+hr{
+    border: 1px solid rgb(107, 107, 107);
 }
 
 /* CIRCLE DECORATIONS */
